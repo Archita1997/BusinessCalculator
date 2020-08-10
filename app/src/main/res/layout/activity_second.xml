@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SecondActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:background="@color/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/b1"
+                android:layout_below="@+id/t1"
+                android:text="EMI"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+                android:src="@drawable/p2"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/b2"
+                android:text="SIP"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+                android:layout_toRightOf="@+id/b1"
+                android:layout_below="@+id/t1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/b3"
+                android:text="PPF"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+                android:layout_toRightOf="@+id/b2"
+                android:layout_below="@+id/t1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/l1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/b4"
+                android:text="RD"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/b5"
+                android:text="GST"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/b6"
+                android:text="FD"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+
+                android:layout_below="@+id/t1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/l2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/b7"
+                android:text="EMI Compare"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/b8"
+                android:text="Compound Interest"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"/>
+            <Button
+                android:id="@+id/b9"
+                android:text="Inflection Calculator"
+                android:textColor="@color/color4"
+                android:background="@drawable/custom_button2"
+
+                android:layout_below="@+id/t1"
+                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_weight="1"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        app:menu="@menu/menu_design"
+        app:headerLayout="@layout/header"
+        android:layout_gravity="start"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

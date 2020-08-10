@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Business Calculator</string>
+    <string name="about">A financial calculator or business calculator is a calculator that performs financial functions commonly needed in
+     business and commerce communities.By using this application one can easily calculate EMI,SIP,PFF,RD,GST,FD
+    and also can compare EMI, find Compound Interest and calculate Inflection.
+       It is ideal for phone and tablet, this application includes the complete package of financial calculators  </string>
+</resources>
